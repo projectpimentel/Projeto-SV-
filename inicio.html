@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Interação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            position: relative; 
+            background-image: url(MacBook\ Air\ -\ 6.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            text-shadow: 1px 1px 2px #7e7e7e;
+
+        }
+        .search-bar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .search-bar input {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            outline: none;
+        }
+        .search-bar button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .search-bar .icon {
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        .button1 {
+            background-color: #e37256;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .button2 {
+            background-color: #FFA06B;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .button1:hover {
+            background-color: #0056b3;
+        } 
+        .button2:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #dc3545;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button>
+            <span class="icon">🔍</span>
+        </button>
+    </div>
+    <div class="button-container">
+        <button class="button1">Botão 1</button>
+        <button class="button2">Botão 2</button>
+    </div>
+    <button class="back-button">Voltar</button>
+</body>
+</html>
